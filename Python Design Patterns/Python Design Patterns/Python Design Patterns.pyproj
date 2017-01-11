@@ -22,13 +22,22 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="budget.py">
+    <Compile Include="Strategy\budget.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Source.py" />
-    <Compile Include="tax_calculator.py">
+    <Compile Include="Strategy\taxes.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Strategy\tax_calculator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategy\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Strategy\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

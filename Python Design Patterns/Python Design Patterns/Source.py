@@ -1,4 +1,4 @@
-from tax_calculator import *
+from Strategy.tax_calculator import *
 import sys
 from os import system
 
@@ -6,7 +6,7 @@ def main():
 
     Calculator = Tax_Calculator()
     budget = Budget(500)
-    Calculator.calc(budget)
+    Calculator.do_calc(budget, ICMS())
     system("pause")
     
 
